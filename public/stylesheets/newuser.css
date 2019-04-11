@@ -1,0 +1,8 @@
+#newUserPage {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+#newUserPage main form {
+    width: 300px;
+    margin: auto;
+}

@@ -1,0 +1,8 @@
+#updateUserPage {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+#updateUserPage main form {
+    width: 300px;
+    margin: auto;
+}

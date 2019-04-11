@@ -1,0 +1,28 @@
+<section class="container">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Title</th>
+            <th>Department</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each users as |user|}}
+        <tr>
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.title}}</td>
+            <td>{{user.department}}</td>
+            <td style="display: flex; flex-direction: row; align-items: center;">
+                <button class="btn btn-danger delete-user" data-userid="{{user._id}}">Delete</button>
+                <a href="/updateuser/{{user._id}}" class="btn btn-primary">Update</a>
+            </td>
+        </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</section>
+<script src="/scripts/manageusers.js">{{!}}</script>

@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/stylesheets/newuser.css" />
+<section id="newUserPage" class="container">
+    <header>
+        <h3>New User</h3>
+    </header>
+    <main>
+        <form method="POST" action="/newuser">
+            <div class="form-group">
+                <label for="nameInput">Name</label>
+                <input type="text" class="form-control" id="nameInput" name="name" aria-describedby="nameHelp" placeholder="Full Name" />
+            </div>
+            <div class="form-group">
+                <label for="ageInput">Age</label>
+                <input type="number" class="form-control" id="ageInput" name="age" placeholder="24">
+            </div>
+            <div class="form-group">
+                <label for="departmentInput">Department</label>
+                <input type="text" class="form-control" id="departmentInput" name="department" placeholder="Engineering" />
+            </div>
+            <div class="form-group">
+                <label for="titleInput">Title</label>
+                <input type="text" class="form-control" id="titleInput" name="title" placeholder="Node Engineer" />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </main>
+</section>
+
